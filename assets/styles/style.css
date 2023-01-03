@@ -2,6 +2,8 @@
 
 :root {
     --cinza-escuro: #efeaea97;
+    --cor-azul: blue;
+    --cor-branca: white;
 }
 
 *{
@@ -20,7 +22,7 @@
 
 .form-signin.w-100.m-auto form{
     background-color: var(--cinza-escuro);
-    width: 400px;
+    width: 600px;
     padding: 20px;
     border-radius: 8px;
 }
@@ -35,10 +37,28 @@
 
 .form-signin.w-100.m-auto form .form-floating .form-control,
 .form-signin.w-100.m-auto form .botoes .w-100.btn.btn-outline-primary,
-.form-signin.w-100.m-auto form .botoes .w-100.btn.btn-outline-danger{
+.form-signin.w-100.m-auto form .botoes .w-100.btn.btn-outline-danger,
+.form-signin.w-100.m-auto form .botoes .w-100.btn.btn-outline-info,
+.form-signin.w-100.m-auto form .form-select{
     border-radius: 40px;
+}
+
+.form-signin.w-100.m-auto form .botoes .w-100.btn.btn-outline-info{
+    color: var(--cor-azul);
+}
+
+.form-signin.w-100.m-auto form .botoes .w-100.btn.btn-outline-info:hover{
+    color: var(--cor-branca);
 }
 
 .form-signin.w-100.m-auto form .botoes{
     display: flex;
+}
+
+.form-signin.w-100.m-auto form .form-select{
+    padding: 16px;
+}
+
+.alert.alert-success, .alert.alert-danger{
+    margin-top: 10px;
 }
