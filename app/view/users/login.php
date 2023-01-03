@@ -2,20 +2,22 @@
     include 'app/view/config/header.php';
 ?>
 
-<form action="">
-    <div class="login">
-        <label for="txtLogin">Login</label>
-        <input type="text" name="txtLogin" id="txtLogin" placeholder="Informe seu login" required>
-    </div>
-    <div class="senha">
-        <label for="txtSenha">Senha</label>
-        <input type="password" name="txtSenha" id="txtSenha" placeholder="Informe sua senha" required>
-    </div>
-    <div class="botoes">
-        <button type="submit" class="btn btn-outline-primary">Logar</button>
-        <button type="reset" class="btn btn-outline-danger">Resetar</button>
-    </div>
-</form>
+<main class="form-signin w-100 m-auto">
+    <form action="/delivery/users/login" method="POST">
+        <h1 class="h3 mb-3 fw-normal">Faça login para acessar</h1>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="login" name="login" placeholder="Informe seu login" required>
+            <label for="login">Login</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Informe sua senha" required>
+            <label for="password">Senha</label>
+        </div>
+        
+        <button class="w-100 btn btn-outline-primary" type="submit">Logar</button>
+    </form>
+</main>
 
 <?php
     include 'app/view/config/footer.php';

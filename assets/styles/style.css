@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+
+:root {
+    --cinza-escuro: #efeaea97;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-signin.w-100.m-auto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-signin.w-100.m-auto form{
+    background-color: var(--cinza-escuro);
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-signin.w-100.m-auto form .form-floating{
+    padding-bottom: 8px;
+}
+
+.form-signin.w-100.m-auto form .h3.mb-3.fw-normal{
+    text-align: center;
+}
+
+.form-signin.w-100.m-auto form .form-floating .form-control,
+.form-signin.w-100.m-auto form .botoes .w-100.btn.btn-outline-primary,
+.form-signin.w-100.m-auto form .botoes .w-100.btn.btn-outline-danger{
+    border-radius: 40px;
+}
+
+.form-signin.w-100.m-auto form .botoes{
+    display: flex;
+}
